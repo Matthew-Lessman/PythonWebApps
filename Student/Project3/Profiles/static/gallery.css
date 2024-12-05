@@ -1,0 +1,20 @@
+h1 {
+    color: rgb(156, 21, 21);
+}
+
+.header {
+    text-align: center;
+}
+
+.photo {
+    margin: 2em;
+    border-radius: 10px;
+}
+
+/* styles.css */
+.centered-image {
+    display: block;
+    margin: 0 auto; /* Center the image */
+    max-width: 300px; /* Set the maximum width */
+    height: auto; /* Maintain aspect ratio */
+}

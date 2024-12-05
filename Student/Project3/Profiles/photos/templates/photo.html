@@ -1,0 +1,23 @@
+{% extends 'theme.html' %}
+
+
+
+{% block content %}
+
+<h3>The Best Heroes</h3>
+
+
+<ul>
+  {% for photo in photos %}
+      <li>
+          <a href="{{ photo.url }}"> <!-- Wrap the name and image with a link -->
+              <h2>{{ photo.name }}</h2>
+              <img src="{{ photo.image }}" alt="{{ photo.name }}" width="200px">
+          </a>
+      </li>
+  {% endfor %}
+</ul>
+
+
+
+{% endblock content %}
