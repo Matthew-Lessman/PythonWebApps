@@ -1,0 +1,15 @@
+{% extends 'superhero_theme.html' %}
+{% load static %}
+
+{% block content %}
+<head>
+  <link rel="stylesheet" href="{% static 'custom.css' %}">
+</head>
+
+<h1>{{ superhero.name }}</h1>
+<p>{{ superhero.description }}</p>
+<img src="{% static superhero.image %}" alt="{{ superhero.name }}" width="300">
+
+<a href="{% url 'home' %}">Home</a>
+
+{% endblock %}

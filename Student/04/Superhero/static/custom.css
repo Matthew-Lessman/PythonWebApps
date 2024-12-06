@@ -1,0 +1,29 @@
+
+body.main-container {
+    background-color: #9e8989;
+    font-family: Arial, sans-serif; 
+  }
+
+h1 {
+    color: rgb(170, 34, 41);
+    font-size: 36px;
+    text-align: center;
+  }
+
+
+/* .header {
+    text-align: center;
+}
+
+.photo {
+    margin: 2em;
+    border-radius: 10px;
+}
+
+.centered-image {
+    display: block;
+    margin: 0 auto; 
+    max-width: 300px; 
+    height: auto; 
+}
+ */
