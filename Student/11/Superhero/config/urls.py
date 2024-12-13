@@ -3,6 +3,7 @@ from hero.views import HeroCreateView, HeroDeleteView, HeroDetailView, HeroListV
 from django.contrib import admin
 from django.views.generic import RedirectView
 
+
 urlpatterns = [
 
     # Hero
