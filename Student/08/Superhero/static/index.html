@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,32 +16,107 @@
 <body class=" bg-dark text-light">
     
     
-    {% block navbar %}
-    {% include 'hero/navbar.html' %}
-    {% endblock navbar %}
+    
+    
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+
+    <div class="container">
+
+        <a class="navbar-brand text-light" href="/">Account Options</a>
+
+        <ul class="navbar-nav text-light ml-auto">
+            
+
+            
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="/accounts/login/">Log In</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="/accounts/signup/">Sign Up</a>
+            </li>
+
+            
+
+        </ul>
+
+    </div>
+
+</nav>
+
+    
 
     <header class="bg-primary p-5 mb-5">
         <h1>Hero Database</h1>
         <h2>Data Views Application</h2>
         <br>
-        <p>{% if user.is_authenticated %}
-        <p>Welcome, {{ user.username }}. Thanks for logging in.</p>
-        {% else %}
+        <p>
         <p>Welcome, new user. Please log in.</p>
         <a href="accounts/login">Log In</a>
-        {% endif %}</p>
+        </p>
     </header>
 
     <div class="container m-5">
         <div class="card bg-light text-dark p-5">
 
             <h1 class="text-primary text-center">
-                {% block title %}No Title{% endblock title %}
+                
+List of Heroes
+
             </h1>
 
-            {% block content %}
-            <h2>No Block Defined</h2>
-            {% endblock content %}
+            
+
+<div class="row">
+
+    <div class="card col-lg">
+
+        <table class="table table-hover">
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+            </tr>
+
+            
+            <tr>
+                <td><a href="/2">Frank Castle</a></td>
+                <td>Punisher</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/3">Oliver Queen</a></td>
+                <td>Arrow</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/4">Peter Parker</a></td>
+                <td>Spiderman</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/5">Naruto Uzumaki</a></td>
+                <td>9 Tails Jinchuriki</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/6">Matt Murdock</a></td>
+                <td>Daredevil</td>
+            </tr>
+            
+
+        </table>
+
+        <p>
+            <a href="/add" class="btn btn-success m-5">Add New Hero</a>
+        </p>
+
+    </div>
+
+</div>
+
+
 
         </div>
     </div>
