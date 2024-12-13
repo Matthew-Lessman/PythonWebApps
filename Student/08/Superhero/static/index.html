@@ -1,13 +1,126 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta http-equiv="refresh" content="0; url=/heroes/" />
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Blog Builder</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
 </head>
 
-<body>
-    <p>If you're not redirected, <a href="/heroes/">click here</a>.</p>
+<body class=" bg-dark text-light">
+    
+    
+    
+    
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+
+    <div class="container">
+
+        <a class="navbar-brand text-light" href="/">Account Options</a>
+
+        <ul class="navbar-nav text-light ml-auto">
+            
+
+            
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="/accounts/login/">Log In</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link  text-light " href="/accounts/signup/">Sign Up</a>
+            </li>
+
+            
+
+        </ul>
+
+    </div>
+
+</nav>
+
+    
+
+    <header class="bg-primary p-5 mb-5">
+        <h1>Hero Database</h1>
+        <h2>Data Views Application</h2>
+        <br>
+        <p>
+        <p>Welcome, new user. Please log in.</p>
+        <a href="accounts/login">Log In</a>
+        </p>
+    </header>
+
+    <div class="container m-5">
+        <div class="card bg-light text-dark p-5">
+
+            <h1 class="text-primary text-center">
+                
+List of Heroes
+
+            </h1>
+
+            
+
+<div class="row">
+
+    <div class="card col-lg">
+
+        <table class="table table-hover">
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+            </tr>
+
+            
+            <tr>
+                <td><a href="/2">Frank Castle</a></td>
+                <td>Punisher</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/3">Oliver Queen</a></td>
+                <td>Arrow</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/4">Peter Parker</a></td>
+                <td>Spiderman</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/5">Naruto Uzumaki</a></td>
+                <td>9 Tails Jinchuriki</td>
+            </tr>
+            
+            <tr>
+                <td><a href="/6">Matt Murdock</a></td>
+                <td>Daredevil</td>
+            </tr>
+            
+
+        </table>
+
+        <p>
+            <a href="/add" class="btn btn-success m-5">Add New Hero</a>
+        </p>
+
+    </div>
+
+</div>
+
+
+
+        </div>
+    </div>
 </body>
 
 </html>
+
